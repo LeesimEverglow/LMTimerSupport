@@ -15,6 +15,8 @@
 		0B7F5F2A20416F3A0074FAB5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B7F5F2920416F3A0074FAB5 /* main.m */; };
 		0B7F5F3420416F3A0074FAB5 /* NSTimerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B7F5F3320416F3A0074FAB5 /* NSTimerDemoTests.m */; };
 		0B7F5F3F20416F3A0074FAB5 /* NSTimerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B7F5F3E20416F3A0074FAB5 /* NSTimerDemoUITests.m */; };
+		0B7F5F4E20416F530074FAB5 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B7F5F4D20416F530074FAB5 /* TimerViewController.m */; };
+		0B7F5F51204171AF0074FAB5 /* NSTimer+LMBlockSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B7F5F50204171AF0074FAB5 /* NSTimer+LMBlockSupport.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		0B7F5F3A20416F3A0074FAB5 /* NSTimerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSTimerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B7F5F3E20416F3A0074FAB5 /* NSTimerDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSTimerDemoUITests.m; sourceTree = "<group>"; };
 		0B7F5F4020416F3A0074FAB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B7F5F4C20416F530074FAB5 /* TimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
+		0B7F5F4D20416F530074FAB5 /* TimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
+		0B7F5F4F204171AF0074FAB5 /* NSTimer+LMBlockSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+LMBlockSupport.h"; sourceTree = "<group>"; };
+		0B7F5F50204171AF0074FAB5 /* NSTimer+LMBlockSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+LMBlockSupport.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,10 @@
 				0B7F5F1B20416F3A0074FAB5 /* AppDelegate.m */,
 				0B7F5F1D20416F3A0074FAB5 /* ViewController.h */,
 				0B7F5F1E20416F3A0074FAB5 /* ViewController.m */,
+				0B7F5F4C20416F530074FAB5 /* TimerViewController.h */,
+				0B7F5F4D20416F530074FAB5 /* TimerViewController.m */,
+				0B7F5F4F204171AF0074FAB5 /* NSTimer+LMBlockSupport.h */,
+				0B7F5F50204171AF0074FAB5 /* NSTimer+LMBlockSupport.m */,
 				0B7F5F2020416F3A0074FAB5 /* Main.storyboard */,
 				0B7F5F2320416F3A0074FAB5 /* Assets.xcassets */,
 				0B7F5F2520416F3A0074FAB5 /* LaunchScreen.storyboard */,
@@ -265,7 +275,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B7F5F4E20416F530074FAB5 /* TimerViewController.m in Sources */,
 				0B7F5F1F20416F3A0074FAB5 /* ViewController.m in Sources */,
+				0B7F5F51204171AF0074FAB5 /* NSTimer+LMBlockSupport.m in Sources */,
 				0B7F5F2A20416F3A0074FAB5 /* main.m in Sources */,
 				0B7F5F1C20416F3A0074FAB5 /* AppDelegate.m in Sources */,
 			);
@@ -433,6 +445,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M953KLT6PD;
 				INFOPLIST_FILE = NSTimerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Owhat.NSTimerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -447,6 +460,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M953KLT6PD;
 				INFOPLIST_FILE = NSTimerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Owhat.NSTimerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
